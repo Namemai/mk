@@ -14,33 +14,33 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE("")
+cl = LINE("EDkRobZOqw8xtawF38M4.+0VwFLVgQ2j2cX+3JyNF5a.wKILaaflA5oamztZbovmR+6jR6vOYD8o1PL8anw7DPU")
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("")
+ki = LINE("EDmmACtaZtftDRgpOGF6.xBAEeq5CEKAfHgmSzhk7zG.O+g8s5mIpajoehQgENDP23F+ADenR/ewnTTMZFenG0o")
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("")
+kk = LINE("EDySmu8JaixmTTqPDxXa.F/033Vty47ZVwBhORXhAoG.1L9VB5uGqd9GCbEGTlt8cLGHU0Hphp7YCH4jJnUJj+0")
 kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("")
+kc = LINE("EDdLG5F0OavaJVcZPSm2.iFiwAtxjMF5fdoxQwQqMuG.Z6nAqFFI35JjW/t0CbULHCVIPA4d+0gM3ky0WmNaaQY")
 kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("")
+km = LINE("EDG9ddwi4UJJE9eKTjz5.jZLwNsJF0dLY/sVeui1BLq.2ZJBuS4L/VS+0ICtUrpQ6yLj+nsGY8tgx1etlIpHNfE")
 km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("")
+kb = LINE("EDy6GjCjwZtxmW8xhhU0.4joXktOiD5sMDqP3TEW5Ka.s9hzIugfKlyEgv0+08AwgavfJPgwda5Ay/DSfofg7ys")
 kb.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("")
+sw = LINE("ED0sIIHi4tNVA9M9m4wa.z1BLPUXch76fSXC9ldkHAG.mM6taYjl4kQ2jZHbAP79c6kCXI0+buRgSxHI/xreS+A")
 sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
 call = cl
-creator = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-staff = ["ufdc20b3a00b5e8f31e4f91017eb361b0"]
+creator = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+owner = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+admin = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+staff = ["uc66e45201d1612eb4ce7b3a86bac4685"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
@@ -2710,7 +2710,7 @@ def bot(op):
                                 kb.sendMessage(msg.to,responsename5)
                                 
                                 
-                        elif cmd == "masuk":
+                        elif cmd == "มา":
                          if msg._from in admin:
                            if msg.toType == 2:
                                group = cl.getGroup(to)
@@ -2780,7 +2780,7 @@ def bot(op):
                                 sw.sendMessage(msg.to, "Pulang dulu "+str(G.name))
                                 sw.leaveGroup(msg.to)
                                 
-                        elif cmd == "kicker in":
+                        elif cmd == "in":
                           if msg._from in admin:
                            if msg.toType == 2:
                                group = cl.getGroup(to)
@@ -2799,7 +2799,7 @@ def bot(op):
                                 cl.sendMessage(msg.to, "Makasih sudah invit\nketemu lain waktu... "+str(G.name))
                                 cl.leaveGroup(msg.to)
                                 
-                        elif cmd == "pulang":
+                        elif cmd == "ออก":
                            if wait["selfbot"] == True:
                             if msg._from in admin:
                                ki.leaveGroup(msg.to)
@@ -3598,7 +3598,7 @@ def bot(op):
                                     cl.sendMessage(msg.to, "Nonactive\n" + msgs)
 
 #===========KICKOUT============#       
-                        elif ("Kicker " in msg.text):
+                        elif ("K " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
