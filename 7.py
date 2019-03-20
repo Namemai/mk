@@ -13,25 +13,25 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE("")
+cl = LINE("EDLGJTk3NDpy0RWcfhf2.BRrxvqP6LElPZAdVnSSZCG.Wg5AzUqLNTA6Yi8C5BmxRge4hFS3yQ98xr8tmOvXSkM")
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("")
+ki = LINE("EDg4UIrfDYnoVYY9Dia8.1LN+29LagmS0CX9BaPqpwa.PEbStN0Zs0p0rjB3rbsXAK2kVHQoxNVKGrSBIuKPoeM")
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("")
+kk = LINE("EDIGTaWx5NclN4G5BLl4.hvTNblMljmHvbqeQuPHKPa.WsXNyS0t7Dezcyx1sl3d+U5SuWvUmReeOODYixcDBxA")
 kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("")
+kc = LINE("EDumHfk5NnN9IecqmS9b.Zmmxwjh8yctjHPhb6qnyYW.ZIeZh2XKvqvnnKOCGT3Loaq0KWaNJA5QK/G/PkWX9KA")
 kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("")
+km = LINE("ED65tSWFHTTWRTedPWY7.x5o+VDWAS5mBwWF0pnG3nW.isiNAczP3NxJ/OfSbaUMThBpmTCiRJ8+J+820ANNCfc")
 km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("")
+kb = LINE("EDu4qoWExVZIzT0zjEn4.QmA4/TSXccv8FL7kpwtxTa.Mb34Kb0Mwmzy/eyvtfZ1dIMm6x7DDHtAoyfrOWMH5b8")
 kb.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("")
+sw = LINE("EDLKPPOpi2Cp7Qoxv2V2./YK21qVw+axwEMucz2y3OG.CKgnN68UyK2IhrMaqFIlIYBNPq6xdIzqoc2BnZtLEcQ")
 sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
