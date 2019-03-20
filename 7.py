@@ -1087,8 +1087,8 @@ def bot(op):
                                           gMembMids = [contact.mid for contact in group.invitee]
                                           for _mid in gMembMids:
                                               random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
-                                       except:
-                                             pass
+                                      except:
+                                          pass
                                     
         if op.type == 13:
             if op.param2 in wait["blacklist"]:
