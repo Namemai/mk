@@ -1118,12 +1118,9 @@ def bot(op):
                                     	km.cancleGroupInvitation(op.param1,[op.param2])
                                     except:
                                         try:
-                                            kb.cancleGroupInvitation(op.param1,[op.param2])
-                                        except:
-                                            try:
-                                                sw.cancleGroupInvitation(op.param1,[op.param2])
-                                            except:  
-                                        	pass
+                                               kb.cancleGroupInvitation(op.param1,[op.param2])
+                                        except:  
+                                               pass
                 return
                                             
 #__________________________________ 
