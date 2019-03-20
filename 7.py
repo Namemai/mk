@@ -1087,12 +1087,7 @@ def bot(op):
                                           gMembMids = [contact.mid for contact in group.invitee]
                                           for _mid in gMembMids:
                                               random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
-                                      except:
-                                             group = sw.getGroup(op.param1)
-                                             gMembMids = [contact.mid for contact in group.invitee]
-                                             for _mid in gMembMids:
-                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
-                                         except:
+                                       except:
                                              pass
                                     
         if op.type == 13:
