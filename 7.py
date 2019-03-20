@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 #thanks to allfams
-
 from LineAPI.linepy import *
 from LineAPI.akad.ttypes import Message
 from LineAPI.akad.ttypes import ContentType as Type
@@ -14,25 +13,25 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE("EDkRobZOqw8xtawF38M4.+0VwFLVgQ2j2cX+3JyNF5a.wKILaaflA5oamztZbovmR+6jR6vOYD8o1PL8anw7DPU")
+cl = LINE("")
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("EDmmACtaZtftDRgpOGF6.xBAEeq5CEKAfHgmSzhk7zG.O+g8s5mIpajoehQgENDP23F+ADenR/ewnTTMZFenG0o")
+ki = LINE("")
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("EDySmu8JaixmTTqPDxXa.F/033Vty47ZVwBhORXhAoG.1L9VB5uGqd9GCbEGTlt8cLGHU0Hphp7YCH4jJnUJj+0")
+kk = LINE("")
 kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("EDdLG5F0OavaJVcZPSm2.iFiwAtxjMF5fdoxQwQqMuG.Z6nAqFFI35JjW/t0CbULHCVIPA4d+0gM3ky0WmNaaQY")
+kc = LINE("")
 kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("EDG9ddwi4UJJE9eKTjz5.jZLwNsJF0dLY/sVeui1BLq.2ZJBuS4L/VS+0ICtUrpQ6yLj+nsGY8tgx1etlIpHNfE")
+km = LINE("")
 km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("EDy6GjCjwZtxmW8xhhU0.4joXktOiD5sMDqP3TEW5Ka.s9hzIugfKlyEgv0+08AwgavfJPgwda5Ay/DSfofg7ys")
+kb = LINE("")
 kb.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("ED0sIIHi4tNVA9M9m4wa.z1BLPUXch76fSXC9ldkHAG.mM6taYjl4kQ2jZHbAP79c6kCXI0+buRgSxHI/xreS+A")
+sw = LINE("")
 sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
@@ -49,8 +48,8 @@ Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc]
-ABC = [ki,kk,kc,km,kb]
+KAC = [cl,ki,kk,kc,km,kb,sw]
+ABC = [cl,ki,kk,kc,km,kb,sw]
 Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
 Saints = admin + owner + staff
 Team = creator + owner + admin + staff + Bots
@@ -75,11 +74,13 @@ ban_list = []
 warmode = []
 ghost = []
 
+responsename = cl.getProfile().displayName
 responsename1 = ki.getProfile().displayName
 responsename2 = kk.getProfile().displayName
 responsename3 = kc.getProfile().displayName
 responsename4 = km.getProfile().displayName
 responsename5 = kb.getProfile().displayName
+responsename6 = sw.getProfile().displayName
 
 
 settings = {
@@ -210,9 +211,9 @@ wait = {
     "mention":"Masuk say ngitip bacok",
     "Respontag":"Cuy ngrtag mele..",
     "welcome":"Wellcome to my Fams",
-    "comment":"Auto like By S̶̭̗̞̙̿͑̽̆̃̒į̷̙̝̦̤̜̗́̉ͅl̸̛͓͋͋͆̍ę̶͇̮̦̣̖̙̘̪̉n̸͍̦͉̖̟͚̗̣̍̓̽̅̚ť̴̙͋ ̷̨̳̠͎̮̘͇̀̅̀͒̈́͊̕͝T̸̡̯̗̩̺͉̑́͛̌̒ͅé̶̡̱̯̮̯̊̏́̀̃͜a̴̭͓̫͚̐́̂̍̂̊̋̚m̸̨̨̹͎͍̳̥͆̓͗̿͐͗͑̿̓͠ ̴̠͐̂B̷̛̳͎̫̻̫̯̣͓̲͋̀͋̋͊̈͗͑o̵̲̾̈́͒͗t̴̢͍̫̰̠̞͖͍̬̑̊̽͒́̈́͗ͅ",
-    "comment1":"Auto like By S̶̭̗̞̙̿͑̽̆̃̒į̷̙̝̦̤̜̗́̉ͅl̸̛͓͋͋͆̍ę̶͇̮̦̣̖̙̘̪̉n̸͍̦͉̖̟͚̗̣̍̓̽̅̚ť̴̙͋ ̷̨̳̠͎̮̘͇̀̅̀͒̈́͊̕͝T̸̡̯̗̩̺͉̑́͛̌̒ͅé̶̡̱̯̮̯̊̏́̀̃͜a̴̭͓̫͚̐́̂̍̂̊̋̚m̸̨̨̹͎͍̳̥͆̓͗̿͐͗͑̿̓͠ ̴̠͐̂B̷̛̳͎̫̻̫̯̣͓̲͋̀͋̋͊̈͗͑o̵̲̾̈́͒͗t̴̢͍̫̰̠̞͖͍̬̑̊̽͒́̈́͗ͅ",
-    "message":"Ciee nge add kepo ye..\nThanks for add me..\n\nS̶̭̗̞̙̿͑̽̆̃̒į̷̙̝̦̤̜̗́̉ͅl̸̛͓͋͋͆̍ę̶͇̮̦̣̖̙̘̪̉n̸͍̦͉̖̟͚̗̣̍̓̽̅̚ť̴̙͋ ̷̨̳̠͎̮̘͇̀̅̀͒̈́͊̕͝T̸̡̯̗̩̺͉̑́͛̌̒ͅé̶̡̱̯̮̯̊̏́̀̃͜a̴̭͓̫͚̐́̂̍̂̊̋̚m̸̨̨̹͎͍̳̥͆̓͗̿͐͗͑̿̓͠ ̴̠͐̂B̷̛̳͎̫̻̫̯̣͓̲͋̀͋̋͊̈͗͑o̵̲̾̈́͒͗t̴̢͍̫̰̠̞͖͍̬̑̊̽͒́̈́͗ͅ"
+    "comment":"Auto like By by,mai",
+    "comment1":"Auto like By by,mai",
+    "message":"Ciee",
 }
 protect = {
     "pqr":[],
@@ -1087,7 +1088,12 @@ def bot(op):
                                           for _mid in gMembMids:
                                               random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
                                       except:
-                                          pass
+                                             group = sw.getGroup(op.param1)
+                                             gMembMids = [contact.mid for contact in group.invitee]
+                                             for _mid in gMembMids:
+                                                 random.choice(ABC).cancelGroupInvitation(op.param1,[_mid])
+                                         except:
+                                             pass
                                     
         if op.type == 13:
             if op.param2 in wait["blacklist"]:
@@ -1117,8 +1123,11 @@ def bot(op):
                                     	km.cancleGroupInvitation(op.param1,[op.param2])
                                     except:
                                         try:
-                                        	kb.cancleGroupInvitation(op.param1,[op.param2])
+                                            kb.cancleGroupInvitation(op.param1,[op.param2])
                                         except:
+                                            try:
+                                                sw.cancleGroupInvitation(op.param1,[op.param2])
+                                            except:  
                                         	pass
                 return
                                             
@@ -1571,7 +1580,7 @@ def bot(op):
                     random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                     wait["blacklist"][op.param2] = True
                     
-            if op.param1 in protect["antijs"]:
+            if op.param1 in protect["js"]:
                 if mid in op.param3:
                     if op.param2 in Bots:
                         pass
@@ -2335,7 +2344,7 @@ def bot(op):
                                Setmain["keyCommand"] = ""
                                cl.sendMessage(msg.to, "Succes Reset Sname ")
 
-                        elif cmd == "restart":
+                        elif cmd == "รี":
                           if wait["selfbot"] == True:
                             if msg._from in owner:
                                cl.sendMessage(msg.to, "please wait")
@@ -2710,7 +2719,7 @@ def bot(op):
                                 kb.sendMessage(msg.to,responsename5)
                                 
                                 
-                        elif cmd == "มา":
+                        elif cmd == "in":
                          if msg._from in admin:
                            if msg.toType == 2:
                                group = cl.getGroup(to)
@@ -2728,7 +2737,9 @@ def bot(op):
                                time.sleep(0.01)
                                kb.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
-                               
+                               sw.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                               time.sleep(0.01)
+
                         elif cmd == "name":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -2780,7 +2791,7 @@ def bot(op):
                                 sw.sendMessage(msg.to, "Pulang dulu "+str(G.name))
                                 sw.leaveGroup(msg.to)
                                 
-                        elif cmd == "in":
+                        elif cmd == "i":
                           if msg._from in admin:
                            if msg.toType == 2:
                                group = cl.getGroup(to)
@@ -2799,7 +2810,7 @@ def bot(op):
                                 cl.sendMessage(msg.to, "Makasih sudah invit\nketemu lain waktu... "+str(G.name))
                                 cl.leaveGroup(msg.to)
                                 
-                        elif cmd == "ออก":
+                        elif cmd == "out":
                            if wait["selfbot"] == True:
                             if msg._from in admin:
                                ki.leaveGroup(msg.to)
@@ -2807,7 +2818,7 @@ def bot(op):
                                kc.leaveGroup(msg.to)
                                km.leaveGroup(msg.to)
                                kb.leaveGroup(msg.to)
-                               
+                               sw.leaveGroup(msg.to)
 
                         elif cmd.startswith("leave "):
                             if msg._from in admin or msg._from in owner:
@@ -2841,7 +2852,7 @@ def bot(op):
                                start = time.time()                               
                                cl.sendMessage(msg.to, "Prosess....")                               
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to, "Time:\n{}".format(str(elapsed_time)))
+                               cl.sendMessage(msg.to, "ความเร็วอยุ่ที่:\n{}".format(str(elapsed_time)))
                                
                         elif cmd == "lurk:on":
                           if wait["selfbot"] == True:
@@ -4331,7 +4342,7 @@ def bot(op):
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "「Sider Msg」\nSider Msg mu :\n\n「 " + str(wait["mention"]) + " 」")
                                
-                        elif cmd == "batre":
+                        elif cmd == "Cek":
                             if msg._from in admin or msg._from in owner:
                                try:cl.inviteIntoGroup(to, ["u45882d0ead1703855dbc60d40e37bec7"]);has = "OK"
                                except:has = "NOT"
@@ -4402,7 +4413,7 @@ def bot(op):
                                  for ticket_id in n_links:
                                      group = cl.findGroupByTicket(ticket_id)
                                      cl.acceptGroupInvitationByTicket(group.id,ticket_id)
-                                     cl.sendMessage(msg.to, "Masuk : %s" % str(group.name))
+                                     cl.sendMessage(msg.to, "มาแล้ว : %s" % str(group.name))
                                      group1 = ka.findGroupByTicket(ticket_id)
                                      
     except Exception as error:
