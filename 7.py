@@ -1572,7 +1572,7 @@ def bot(op):
                     random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                     wait["blacklist"][op.param2] = True
                     
-            if op.param1 in protect["js"]:
+            if op.param1 in protect["s"]:
                 if mid in op.param3:
                     if op.param2 in Bots:
                         pass
@@ -2539,7 +2539,7 @@ def bot(op):
                                 cl.sendMessage(msg.to,"Send picture")
 
 #===========BOT UPDATE============#
-                        elif cmd == "mention" or text.lower() == 'cek jones':
+                        elif cmd == "แทค" or text.lower() == 'cek jones':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff:
                                group = cl.getGroup(msg.to)
@@ -2729,8 +2729,6 @@ def bot(op):
                                time.sleep(0.01)
                                kb.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
-                               sw.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.01)
 
                         elif cmd == "name":
                           if wait["selfbot"] == True:
@@ -2810,7 +2808,6 @@ def bot(op):
                                kc.leaveGroup(msg.to)
                                km.leaveGroup(msg.to)
                                kb.leaveGroup(msg.to)
-                               sw.leaveGroup(msg.to)
 
                         elif cmd.startswith("leave "):
                             if msg._from in admin or msg._from in owner:
@@ -3458,7 +3455,7 @@ def bot(op):
                                          msgs = "Protect has been disable"
                                     cl.sendMessage(msg.to, "Nonactive\n\n" + msgs)
 
-                        elif 'Proall ' in msg.text:
+                        elif 'Pro ' in msg.text:
                            if msg._from in owner or msg._from in admin:
                               spl = msg.text.replace('Proall ','')
                               if spl == 'on':
@@ -3538,7 +3535,7 @@ def bot(op):
                                          msgs = "Anti kicker off "
                                     cl.sendMessage(msg.to, "nonactive\n" + msgs)
 
-                        elif 'Allpro ' in msg.text:
+                        elif 'pro ' in msg.text:
                            if msg._from in owner or msg._from in admin:
                               spl = msg.text.replace('Allpro ','')
                               if spl == 'on':
@@ -4118,7 +4115,7 @@ def bot(op):
                                             except:
                                                 pass
                                                 
-                        elif cmd == "unban all":
+                        elif cmd == "Cb":
                             if msg.toType == 2:
                                 gs = cl.getGroup(msg.to)
                                 targets = []
@@ -4334,7 +4331,7 @@ def bot(op):
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "「Sider Msg」\nSider Msg mu :\n\n「 " + str(wait["mention"]) + " 」")
                                
-                        elif cmd == "ck":
+                        elif cmd == "cek":
                             if msg._from in admin or msg._from in owner:
                                try:cl.inviteIntoGroup(to, ["u45882d0ead1703855dbc60d40e37bec7"]);has = "OK"
                                except:has = "NOT"
