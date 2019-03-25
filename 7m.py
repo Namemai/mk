@@ -4442,9 +4442,9 @@ def bot(op):
                                if has1 == "OK":sil1 = "🔋██ full 100%"
                                else:sil1 = "🔌█▒ Low 0%"
                                kb.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
-                               try:sw.inviteIntoGroup(to, ["uea5fe04e39713e6768cf5687bc5ac7aa"]);has = "OK"
+                               try:sw.inviteIntoGroup(to, ["ufb2936d50bd6fc05d67a6502676637a2"]);has = "OK"
                                except:has = "NOT"
-                               try:sw.kickoutFromGroup(to, ["uea5fe04e39713e6768cf5687bc5ac7aa"]);has1 = "OK"
+                               try:sw.kickoutFromGroup(to, ["ufb2936d50bd6fc05d67a6502676637a2"]);has1 = "OK"
                                except:has1 = "NOT"
                                if has == "OK":sil = "🔋██ full 100%"
                                else:sil = "🔌█▒ Low 0%"
