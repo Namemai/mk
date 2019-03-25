@@ -955,11 +955,9 @@ def bot(op):
                                         try:km.kickoutFromGroup(op.param1,[op.param2])
                                         except:
                                              try:kb.kickoutFromGroup(op.param1,[op.param2])
-                                            except:
-                                                 try:sw.kickoutFromGroup(op.param1,[op.param2])
-                                                 except:pass
-                                 warmode.remove(op.param1)
-                     except:pass
+                                             except:pass
+                              warmode.remove(op.param1)
+                  except:pass
        
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
