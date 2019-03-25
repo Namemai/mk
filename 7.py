@@ -954,7 +954,7 @@ def bot(op):
                             	    except:
                             	        try:km.kickoutFromGroup(op.param1,[op.param2])
                             	        except:
-                            	            try:kb.kickoutFromGroup(op.param1,[op.param2])
+                            	             try:kb.kickoutFromGroup(op.param1,[op.param2])
                                             except:
                                                  try:sw.kickoutFromGroup(op.param1,[op.param2])
                             	                 except:pass
