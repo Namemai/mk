@@ -208,7 +208,7 @@ wait = {
     "sticker":False,
     "unsend":True,
     "selfbot":True,
-    "mention":"bacok",
+    "mention":"ต๊ะเอ๋",
     "Respontag":"Cuy ngrtag mele..",
     "welcome":"Wellcome to my Fams",
     "comment":"Auto like ",
@@ -503,7 +503,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "꧁❈§{MAI}§❈꧂「{}」\nHaii ".format(str(len(mid)))
+        textx = "꧁❈§{MAI}§❈꧂「{}」\nต๊ะเอ๋ ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -612,15 +612,15 @@ def help():
     helpMessage += "┃ " + "╭──⍟ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
     helpMessage += "┃" + " ├───༼꧁❈§{MAI}§❈꧂──\n"
     helpMessage += "┃" + " ├──────────────\n"
-    helpMessage += "╠❂➣ %i. " % num + key + "Me\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "มี\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Sp\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Kepo @\n"
     num = (num+1)
-    helpMessage += "╠❂➣ %i. " % num + key + "Mybot\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "bb\n"
     num = (num+1)
-    helpMessage += "╠❂➣ %i. " % num + key + "Settings\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "Set\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Name\n"
     num = (num+1)
@@ -634,9 +634,9 @@ def help():
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Ginfo\n"
     num = (num+1)
-    helpMessage += "╠❂➣ %i. " % num + key + "Open\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "O\n"
     num = (num+1)    
-    helpMessage += "╠❂➣ %i. " % num + key + "Close\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "C\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i ." % num + key + "Url grup\n"
     num = (num+1)
@@ -648,7 +648,7 @@ def help():
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Hapuschat\n"
     num = (num+1)
-    helpMessage += "╠❂➣ %i. " % num + key + "Sider on/off\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "เปิดอ่าน/ปิดอ่าน\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Upfoto\n"
     num = (num+1)
@@ -660,7 +660,7 @@ def help():
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Sname\n"
     num = (num+1)
-    helpMessage += "╠❂➣ %i. " % num + key + "Reset sname\n"
+    helpMessage += "╠❂➣ %i. " % num + key + "รี\n"
     num = (num+1)
     helpMessage += "╠❂➣ %i. " % num + key + "Ssider: text\n"
     num = (num+1)
@@ -744,17 +744,17 @@ def helpbot():
     helpMessage2 += "┃ " + "╭───⍟ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
     helpMessage2 += "┃" + " ├───༼꧁❈§{MAI}§❈꧂──\n"
     helpMessage2 += "┃" + " ├──────────────\n"
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Kicker @\n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "K @\n"
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Vc @ \n"
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Mainkan @\n"
     num = (num+1)
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Invite \n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "ดึง \n"
     num = (num+1)
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Bl \n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "Bc \n"
     num = (num+1)
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Refresh \n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "Rf \n"
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Gas \n"
     num = (num+1)
@@ -768,7 +768,7 @@ def helpbot():
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Ban all\n"
     num = (num+1)
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Clearban\n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "Cb\n"
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Adminexpl:on\n"
     num = (num+1)
@@ -832,9 +832,9 @@ def helpbot():
     num = (num+1)
     helpMessage2 += "╠❂➣ %i. " % num + key + "Leave「Namagrup」\n"
     num = (num+1)    
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Kicker「in」\n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "มา「in」\n"
     num = (num+1)  
-    helpMessage2 += "╠❂➣ %i. " % num + key + "Kicker「lv」\n"
+    helpMessage2 += "╠❂➣ %i. " % num + key + "ออก「lv」\n"
     num = (num+1)    
     helpMessage2 += "╠❂➣ %i. " % num + key + "Infogrup「angka」\n"
     num = (num+1)
