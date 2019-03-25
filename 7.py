@@ -948,16 +948,16 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             try:ki.kickoutFromGroup(op.param1,[op.param2])
                             except:
-                            	try:kk.kickoutFromGroup(op.param1,[op.param2])
-                            	except:
-                            	    try:kc.kickoutFromGroup(op.param1,[op.param2])
-                            	    except:
-                            	        try:km.kickoutFromGroup(op.param1,[op.param2])
-                            	        except:
-                            	             try:kb.kickoutFromGroup(op.param1,[op.param2])
+                                try:kk.kickoutFromGroup(op.param1,[op.param2])
+                                except:
+                                    try:kc.kickoutFromGroup(op.param1,[op.param2])
+                                    except:
+                                        try:km.kickoutFromGroup(op.param1,[op.param2])
+                                        except:
+                                             try:kb.kickoutFromGroup(op.param1,[op.param2])
                                             except:
                                                  try:sw.kickoutFromGroup(op.param1,[op.param2])
-                            	                 except:pass
+                                                 except:pass
                                  warmode.remove(op.param1)
                      except:pass
        
@@ -966,18 +966,18 @@ def bot(op):
                 if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                    try:ki.kickoutFromGroup(op.param1,[op.param2])
                    except:
-                   	try:kk.kickoutFromGroup(op.param1,[op.param2])
-                   	except:
-                   	     try:kc.kickoutFromGroup(op.param1,[op.param2])
-                   	    except:
-                                 try:km.kickoutFromGroup(op.param1,[op.param2])
+                        try:kk.kickoutFromGroup(op.param1,[op.param2])
+                        except:
+                            try:kc.kickoutFromGroup(op.param1,[op.param2])
+                            except:
+                                try:km.kickoutFromGroup(op.param1,[op.param2])
                                except:
                                     try:kb.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                          try:sw.kickoutFromGroup(op.param1,[op.param2])
                                        except:
-                   	                    try:cl.reissueGroupTicket(op.param1);X = cl.getGroup(op.param1);X.preventedJoinByTicket = True;Ticket = cl.reissueGroupTicket(op.param1);sw.acceptGroupInvitationByTicket(op.param1,Ticket);sw.kickoutFromGroup(op.param1,[op.param2])
-                   	                    except:pass
+                                         try:cl.reissueGroupTicket(op.param1);X = cl.getGroup(op.param1);X.preventedJoinByTicket = True;Ticket = cl.reissueGroupTicket(op.param1);sw.acceptGroupInvitationByTicket(op.param1,Ticket);sw.kickoutFromGroup(op.param1,[op.param2])
+                                         except:pass
                       cl.reissueGroupTicket(op.param1)
                       X = cl.getGroup(op.param1)
                       X.preventedJoinByTicket = True
