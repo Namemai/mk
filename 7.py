@@ -956,10 +956,10 @@ def bot(op):
                             	        except:
                             	            try:kb.kickoutFromGroup(op.param1,[op.param2])
                                             except:
-                                                try:sw.kickoutFromGroup(op.param1,[op.param2])
-                            	                except:pass
-                            warmode.remove(op.param1)
-                except:pass
+                                                 try:sw.kickoutFromGroup(op.param1,[op.param2])
+                            	                 except:pass
+                                 warmode.remove(op.param1)
+                     except:pass
        
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
@@ -978,13 +978,13 @@ def bot(op):
                                        except:
                    	                    try:cl.reissueGroupTicket(op.param1);X = cl.getGroup(op.param1);X.preventedJoinByTicket = True;Ticket = cl.reissueGroupTicket(op.param1);sw.acceptGroupInvitationByTicket(op.param1,Ticket);sw.kickoutFromGroup(op.param1,[op.param2])
                    	                    except:pass
-                   cl.reissueGroupTicket(op.param1)
-                   X = cl.getGroup(op.param1)
-                   X.preventedJoinByTicket = True
-                   cl.updateGroup(X)
-                   warmode.append(op.param1)
-                else:
-                   pass
+                      cl.reissueGroupTicket(op.param1)
+                      X = cl.getGroup(op.param1)
+                      X.preventedJoinByTicket = True
+                      cl.updateGroup(X)
+                      warmode.append(op.param1)
+                   else:
+                      pass
 #========================== PROTECTUPDATEGROUP                          
         if op.type == 13:
             if mid in op.param3:
