@@ -2328,19 +2328,6 @@ def bot(op):
                         elif text.lower() == 'bot':
                                cl.sendMessage(msg.to, "On bos by.꧁❈§{MAI}§❈꧂")
 
-                        elif cmd == "m6":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                try:
-                                    anggota = [Amid,Bmid,Cmid,Dmid,Emid,Zmid]
-                                    cl.inviteIntoGroup(msg.to, anggota)
-                                    ki.acceptGroupInvitation(msg.to)
-                                    kk.acceptGroupInvitation(msg.to)
-                                    kc.acceptGroupInvitation(msg.to)
-                                    km.acceptGroupInvitation(msg.to)
-                                    kb.acceptGroupInvitation(msg.to)
-                                    sw.acceptGroupInvitation(msg.to)
-
                         elif ("Get id " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff:
