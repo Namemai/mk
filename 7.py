@@ -363,13 +363,13 @@ def waktu(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
     days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
+    return '%02d วัน %02d ชั่วโมง %02d นาที %02d วินาที' % (days, hours, mins, secs)
 
 def runtime(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
     days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
+    return '%02d วัน %02d ชั่วโมง %02d นาที %02d วินาที' % (days, hours, mins, secs)
     
 def sendImage(to, path, name="image"):
     try:
@@ -1541,21 +1541,29 @@ def bot(op):
                         sw.inviteIntoGroup(op.param1,[op.param3])
                         sw.kickoutFromGroup(op.param1,[op.param2])
                         ki.acceptGroupInvitation(op.param1)
+                        cl.inviteIntoGroup(op.param1,[op.param3])
+                        sw.acceptGroupInvitation(op.param1)
                     except:
                         try:
                             sw.inviteIntoGroup(op.param1,[op.param3])
                             sw.kickoutFromGroup(op.param1,[op.param2])
                             kk.acceptGroupInvitation(op.param1)
+                            cl.inviteIntoGroup(op.param1,[op.param3])
+                            sw.acceptGroupInvitation(op.param1)
                         except:
                             try:
                                 sw.inviteIntoGroup(op.param1,[op.param3])
                                 sw.kickoutFromGroup(op.param1,[op.param2])
                                 kc.acceptGroupInvitation(op.param1)
+                                cl.inviteIntoGroup(op.param1,[op.param3])
+                                sw.acceptGroupInvitation(op.param1)
                             except:
                                 try:
                                     sw.inviteIntoGroup(op.param1,[op.param3])
                                     sw.kickoutFromGroup(op.param1,[op.param2])
                                     km.acceptGroupInvitation(op.param1)
+                                    cl.inviteIntoGroup(op.param1,[op.param3])
+                                    sw.acceptGroupInvitation(op.param1)
                                 except:
                                     try:
                                         G = cl.getGroup(op.param1)
@@ -2319,6 +2327,51 @@ def bot(op):
                                cl.sendMessage(msg.to, "")
                         elif text.lower() == 'bot':
                                cl.sendMessage(msg.to, "On bos by.꧁❈§{MAI}§❈꧂")
+
+                        elif cmd == "m6":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                try:
+                                    anggota = [Amid,Bmid,Cmid,Dmid,Emid,Zmid]
+                                    cl.inviteIntoGroup(msg.to, anggota)
+                                    ki.acceptGroupInvitation(msg.to)
+                                    kk.acceptGroupInvitation(msg.to)
+                                    kc.acceptGroupInvitation(msg.to)
+                                    km.acceptGroupInvitation(msg.to)
+                                    kb.acceptGroupInvitation(msg.to)
+                                    sw.acceptGroupInvitation(msg.to)
+
+                        elif cmd == "sp6":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                cl.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                ki.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kk.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kc.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                km.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                kb.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
+                                get_profile_time_start = time.time()
+                                get_profile = cl.getProfile()
+                                get_profile_time = time.time() - get_profile_time_start
+                                sw.sendMessage(msg.to, "Speed\n%.10f detik" % (get_profile_time/3))
 
                         elif ("Get id " in msg.text):
                           if wait["selfbot"] == True:
