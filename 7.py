@@ -2862,7 +2862,7 @@ def bot(op):
                                sw.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
                                
-                        elif cmd == "name":
+                        elif cmd == "nn":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                ki.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
@@ -2870,6 +2870,17 @@ def bot(op):
                                kc.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
                                km.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
                                kb.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
+                               sw.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
+
+                        elif cmd == "n":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                sendMention1(msg.to, sender, "Ready ", "")
+                                sendMention2(msg.to, sender, "Ready ", "")
+                                sendMention3(msg.to, sender, "Ready ", "")
+                                sendMention4(msg.to, sender, "Ready ", "")
+                                sendMention5(msg.to, sender, "Ready ", "")
+                                sendMention6(msg.to, sender, "Ready ", "")
                  
                         elif cmd == "bye":
                           if wait["selfbot"] == True:
