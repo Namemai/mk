@@ -1238,7 +1238,7 @@ def bot(op):
                         wait["blacklist"][op.param2] = True
                     except:
                         try:
-                            kk.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid)
+                            kk.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid])
                             kk.kickoutFromGroup(op.param1,[op.param2])
                             cl.acceptGroupInvitation(op.param1)
                             kc.cancelGroupInvitation(op.param1,[op.param2])
