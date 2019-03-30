@@ -35,8 +35,6 @@ kb.log("Auth Token : " + str(kb.authToken))
 sw = LINE("ED0dEa3ReFvB3HzhwlS0.4joXktOiD5sMDqP3TEW5Ka.moAssNi6qB4ynEzMcVsEBykXez4MXcVeUWq2g6lf63A")
 sw.log("Auth Token : " + str(sw.authToken))
 
-dz = LINE("EDk8mK1SNWfFvMmDOEya.z1BLPUXch76fSXC9ldkHAG./t3q7uipD54S+IjYPZomoSNXOGKvAsJtRBxZwaywIJQ")
-dz.log("Auth Token : " + str(dz.authToken))
 
 oepoll = OEPoll(cl)
 call = cl
@@ -52,10 +50,9 @@ Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
 Zmid = sw.getProfile().mid
-Dhenza = dz.getProfile().mid
-KAC = [cl,ki,kk,kc,km,kb,sw,dz]
-ABC = [cl,ki,kk,kc,km,kb,sw,dz]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid,Dhenza]
+KAC = [cl,ki,kk,kc,km,kb,sw]
+ABC = [cl,ki,kk,kc,km,kb,sw]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
 Saints = admin + owner + staff
 Team = creator + owner + admin + staff + Bots
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -85,7 +82,6 @@ responsename3 = kc.getProfile().displayName
 responsename4 = km.getProfile().displayName
 responsename5 = kb.getProfile().displayName
 responsename6 = sw.getProfile().displayName
-responsename7 = dz.getProfile().displayName
 
 settings = {
     "autoBlock": False,
