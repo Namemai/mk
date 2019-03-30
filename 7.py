@@ -2830,7 +2830,7 @@ def bot(op):
                                     mg += str(g) + ". " +cl.getGroup(group).name + "\n"
                                 cl.sendMessage(msg.to,"Settings Protection\n\nProurl :\n"+ma+"\nProall:\n"+mb+"\nProtect:\n"+mf+"\nProtect Cancel:\n"+mc+"\nProinvite:\n"+md+"\nProtectJS:\n"+mg+"\nProtectlist %s Grup protect" %(str(len(protect["pqr"])+len(protect["protect"])+len(protect["antijs"])+len(protect["proall"])+len(protectcancel)+len(protect["pinv"]))))
 
-                        elif cmd == "bb":
+                        elif cmd == "b":
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff:
                                 ki.sendMessage(msg.to,responsename1)
@@ -2861,17 +2861,7 @@ def bot(op):
                                time.sleep(0.01)
                                sw.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
-                               
-                        elif cmd == "n":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               cl.sendMessage(msg.to, sender, "Ready ", "")
-                               ki.sendMessage(msg.to, sender, "Ready ", "")
-                               kk.sendMessage(msg.to, sender, "Ready ", "")
-                               kc.sendMessage(msg.to, sender, "Ready ", "")
-                               km.sendMessage(msg.to, sender, "Ready ", "")
-                               kb.sendMessage(msg.to, sender, "Ready ", "")
-                               sw.sendMessage(msg.to, sender, "Ready ", "")
+
 
                  
                         elif cmd == "bye":
