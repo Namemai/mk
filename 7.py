@@ -2862,25 +2862,17 @@ def bot(op):
                                sw.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
                                
-                        elif cmd == "nn":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               ki.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-                               kk.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-                               kc.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-                               km.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-                               kb.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-                               sw.sendMessage(msg.to, "۞❂✪₷ιlΣƬ ₭ιll₠₹ ⋮➲➤➤")
-
                         elif cmd == "n":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                sendMention1(msg.to, sender, "Ready ", "")
-                                sendMention2(msg.to, sender, "Ready ", "")
-                                sendMention3(msg.to, sender, "Ready ", "")
-                                sendMention4(msg.to, sender, "Ready ", "")
-                                sendMention5(msg.to, sender, "Ready ", "")
-                                sendMention6(msg.to, sender, "Ready ", "")
+                               cl.sendMessage(msg.to, sender, "Ready ", "")
+                               ki.sendMessage(msg.to, sender, "Ready ", "")
+                               kk.sendMessage(msg.to, sender, "Ready ", "")
+                               kc.sendMessage(msg.to, sender, "Ready ", "")
+                               km.sendMessage(msg.to, sender, "Ready ", "")
+                               kb.sendMessage(msg.to, sender, "Ready ", "")
+                               sw.sendMessage(msg.to, sender, "Ready ", "")
+
                  
                         elif cmd == "bye":
                           if wait["selfbot"] == True:
