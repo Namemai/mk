@@ -4418,4 +4418,4 @@ while True:
                 # Don't remove this line, if you wan't get error soon!
                 oepoll.setRevision(op.revision)
     except Exception as e:
-        logError(e
+        logError(e)
