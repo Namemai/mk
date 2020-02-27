@@ -14,34 +14,34 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE("EDLGJTk3NDpy0RWcfhf2.BRrxvqP6LElPZAdVnSSZCG.Wg5AzUqLNTA6Yi8C5BmxRge4hFS3yQ98xr8tmOvXSkM")
+cl = LINE("EOrUFc5hXNEQzaVZjH72.Bmnxdtayhovnf4ncDEYBuG.qQgq0ioYBAjOfKFnELHUz+Xu1xhUvjndPIcLlzEcd+U")
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("EDg4UIrfDYnoVYY9Dia8.1LN+29LagmS0CX9BaPqpwa.PEbStN0Zs0p0rjB3rbsXAK2kVHQoxNVKGrSBIuKPoeM")
+ki = LINE("EOfSvXSFaJVfOzxHynl6.RD/FZabZ/UggLjcq3uvITG.iAhK4qpa6L/CH+t8VKY4ftNPzN5p2L4Q+kBT48rO2N0")
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("EDIGTaWx5NclN4G5BLl4.hvTNblMljmHvbqeQuPHKPa.WsXNyS0t7Dezcyx1sl3d+U5SuWvUmReeOODYixcDBxA")
+kk = LINE("EOonKImMRF6fEuOI9cof.LsYfG6Y88vEHwL9OxgYs3W.qbcm3+Z+e/VAcIhdbtXRLA2ffsreINh5VTIYySF0Yjo")
 kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("EDumHfk5NnN9IecqmS9b.Zmmxwjh8yctjHPhb6qnyYW.ZIeZh2XKvqvnnKOCGT3Loaq0KWaNJA5QK/G/PkWX9KA")
+kc = LINE("EOws88fFZBwfX75VnTB6.RhezGH3eH5AEPDgH6xaSvG.gOU8+w82xGrU74KJX/NJOktBROw2MPByK9Bcp0FYSNE")
 kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("ED65tSWFHTTWRTedPWY7.x5o+VDWAS5mBwWF0pnG3nW.isiNAczP3NxJ/OfSbaUMThBpmTCiRJ8+J+820ANNCfc")
+km = LINE("EOJj78htCEuDHOrReRgd.zslwtVKEvCKn1kc90hwjZq.tTFnBDxw1FJuVlKs5PzeV2WmF38yMs9npbyfdPdhHWE")
 km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("EDu4qoWExVZIzT0zjEn4.QmA4/TSXccv8FL7kpwtxTa.Mb34Kb0Mwmzy/eyvtfZ1dIMm6x7DDHtAoyfrOWMH5b8")
+kb = LINE("EO266IJqWJIYogTG7MX7.VLQ1ozYf46mhecnT5r9EnW.PnXDPQmwLXldr+gJ6lCPc8jVewPDcCOuRBKQNOSO3dI")
 kb.log("Auth Token : " + str(kb.authToken))
 
-k7 = LINE("EDumHfk5NnN9IecqmS9b.Zmmxwjh8yctjHPhb6qnyYW.ZIeZh2XKvqvnnKOCGT3Loaq0KWaNJA5QK/G/PkWX9KA")
+k7 = LINE("EOqWAKosm5sh0t6gEt9f.Wr+FHw+NcQ2XUve/mXAwhW.sed/Nc8ezVyMb9GGpx+n4O4yM5bCOnu5NVmWk5rHhGY")
 k7.log("Auth Token : " + str(kc.authToken))
 
-k8 = LINE("ED65tSWFHTTWRTedPWY7.x5o+VDWAS5mBwWF0pnG3nW.isiNAczP3NxJ/OfSbaUMThBpmTCiRJ8+J+820ANNCfc")
+k8 = LINE("EOspiVNuVvKFHy78D1r4.fGl5JXfTM/YzBbtvT/m5Ta.tssUMVn+zA0zulOm8Q+jvOj9o2UHTUfUhhd0+/bSDJU")
 k8.log("Auth Token : " + str(km.authToken))
 
-k9 = LINE("EDu4qoWExVZIzT0zjEn4.QmA4/TSXccv8FL7kpwtxTa.Mb34Kb0Mwmzy/eyvtfZ1dIMm6x7DDHtAoyfrOWMH5b8")
+k9 = LINE("EO77fv9U7uR1dZnZFQua.n5ptLwX2xQr2q3u0kS3F/G.MBA3znsr4SSudsuS8NJBP1wTzwHOzPsTBvFsEWcQky0")
 k9.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("EDLKPPOpi2Cp7Qoxv2V2./YK21qVw+axwEMucz2y3OG.CKgnN68UyK2IhrMaqFIlIYBNPq6xdIzqoc2BnZtLEcQ")
+sw = LINE("EOFr6UvY9wBVxMnUtY8a.yNdQ+8s/SY3aWrPSLOoT/G.i6GsNIma9OxgQnw4rXf7BpRFCWpAxE/MI/3BOkKd/fQ")
 sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
@@ -624,7 +624,7 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╭━━━━━━━━━━━━━━━\n"
-    helpMessage += "┃ " + "╭──⍟ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
+    helpMessage += "┃ " + "╭──คำสั่ง─\n"
     helpMessage += "┃" + " ├──────────────\n"
     helpMessage += "╠❂➣ %i. " % num + key + "Me\n"
     num = (num+1)
