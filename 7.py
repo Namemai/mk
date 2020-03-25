@@ -14,26 +14,24 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE("EOrUFc5hXNEQzaVZjH72.Bmnxdtayhovnf4ncDEYBuG.qQgq0ioYBAjOfKFnELHUz+Xu1xhUvjndPIcLlzEcd+U")
+cl = LINE('EPvzSEqjymbeEgllC6n2.sg9Izcl+/YM4kMsM/KGxuG.dQYi4djtlcjyI4vSBCT4C40XHHpcqjWmA22rqdBhHag=')
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("EOfSvXSFaJVfOzxHynl6.RD/FZabZ/UggLjcq3uvITG.iAhK4qpa6L/CH+t8VKY4ftNPzN5p2L4Q+kBT48rO2N0")
+ki = LINE('EPxmYYxrjuGBgPEZv9s0.eIjotsSgrqsPZOlBuUViia.GFAWy3HvH+kSr7H+huRMs5DEn9GBfwviGpFddtSouzk=')
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("EOonKImMRF6fEuOI9cof.LsYfG6Y88vEHwL9OxgYs3W.qbcm3+Z+e/VAcIhdbtXRLA2ffsreINh5VTIYySF0Yjo")
+kk = LINE('EP3tIrHokXhP2nHL9Xjd.We4zmQsffJ/LAJeph+IUlq.sw6DxFEy/R7hY5wnC5QaWHunnLsOcoHVpoMg141L4/U=')
 kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("EOws88fFZBwfX75VnTB6.RhezGH3eH5AEPDgH6xaSvG.gOU8+w82xGrU74KJX/NJOktBROw2MPByK9Bcp0FYSNE")
+kc = LINE('EP0CHhlEULRuUxWa7IH1.Qq04Hnpanlfw2DDzoPOjGq.8OenL3AxNLhc8db+WXPPslreKAxD+YsyTh66hBVRCZI=')
 kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("EOJj78htCEuDHOrReRgd.zslwtVKEvCKn1kc90hwjZq.tTFnBDxw1FJuVlKs5PzeV2WmF38yMs9npbyfdPdhHWE")
+km = LINE('EPmFxETpKPBK2bdg0XO4.n5rlPR2IqQ1ur+7TelBiva.33RZtSGnAUWrBUMRjfe+LrCoLqxkCo2FqWEQxUg48Xo=')
 km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("EO266IJqWJIYogTG7MX7.VLQ1ozYf46mhecnT5r9EnW.PnXDPQmwLXldr+gJ6lCPc8jVewPDcCOuRBKQNOSO3dI")
+kb = LINE('EP6ooetshsn12kikfSZ2.UMPDuU92uGOsP/Jsly168G.A4jEofaquMWcyjHQIPOMLsCpUPV97GX5v3zp/TFVImo=')
 kb.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("EOqWAKosm5sh0t6gEt9f.Wr+FHw+NcQ2XUve/mXAwhW.sed/Nc8ezVyMb9GGpx+n4O4yM5bCOnu5NVmWk5rHhGY")
-sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
 call = cl
@@ -48,10 +46,9 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
-Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc,km,kb,sw]
-ABC = [cl,ki,kk,kc,km,kb,sw]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
+KAC = [cl,ki,kk,kc,km,kb]
+ABC = [cl,ki,kk,kc,km,kb]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid]
 Saints = admin + owner + staff
 Team = creator + owner + admin + staff + Bots
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -73,14 +70,12 @@ groupImage = {}
 list = []
 ban_list = []
 warmode = []
-ghost = []
 
 responsename1 = ki.getProfile().displayName
 responsename2 = kk.getProfile().displayName
 responsename3 = kc.getProfile().displayName
 responsename4 = km.getProfile().displayName
 responsename5 = kb.getProfile().displayName
-responsename6 = sw.getProfile().displayName
 
 
 settings = {
