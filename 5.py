@@ -14,7 +14,7 @@ import time, random, multiprocessing, sys, json, codecs, threading, glob, re, st
 from gtts import gTTS
 from googletrans import Translator
 
-cl = LINE('EPvzSEqjymbeEgllC6n2.sg9Izcl+/YM4kMsM/KGxuG.dQYi4djtlcjyI4vSBCT4C40XHHpcqjWmA22rqdBhHag=')
+cl = LINE('EPvbcpIJGSzmKnifKfW5.XM5fib0weUTm57oOA6XgHq.us6hrwQnwroqFhAjn43KP/7dUuoTCchisFHFIVxYVvE=')
 cl.log("Auth Token : " + str(cl.authToken))
 
 ki = LINE('EPxmYYxrjuGBgPEZv9s0.eIjotsSgrqsPZOlBuUViia.GFAWy3HvH+kSr7H+huRMs5DEn9GBfwviGpFddtSouzk=')
